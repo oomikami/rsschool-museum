@@ -1,8 +1,10 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-main{
+main {
     padding: 0;
     margin: 0;
 }
@@ -24,7 +26,9 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Forum', serif;
     margin: 0;
     padding: 0;
@@ -81,7 +85,7 @@ nav ul {
     gap: 55px;
 }
 
-nav ul li a{
+nav ul li a {
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-weight: 200;
@@ -99,6 +103,7 @@ nav ul li a:hover {
 #first-screen {
     background-color: #030303;
 }
+
 .first-screen-container {
     width: 1440px;
     margin: 0 auto;
@@ -126,7 +131,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .first-screen-text h1 {
@@ -173,7 +178,7 @@ nav ul li a:hover {
     letter-spacing: 2px;
     border: none;
     cursor: pointer;
- }
+}
 
 .first-screen-left button:hover {
     background-color: #9D8665;
@@ -186,7 +191,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: start;
     width: 1000px;
-    padding-bottom: 60px;
+    padding-bottom: 0;
 }
 
 .slider {
@@ -246,7 +251,7 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px; 
+    gap: 25px;
 }
 
 .slider-dots .dot {
@@ -258,4 +263,184 @@ nav ul li a:hover {
 
 .slider-dots .dot.active {
     background-color: #D2B183;
-}   
+}
+
+
+#visit {
+    background-color: #fff;
+}
+
+.visit-container {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+h2 {
+    color: #9D8665;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.section-devider {
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+    margin-bottom: 75px;
+}
+
+.visit-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #000;
+    font-family: Forum;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.section-subdevider {
+    width: 300px;
+    height: 2px;
+    background-color: #710707;
+    margin-bottom: 10px;
+}
+
+.visit-subtitle {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.visit-gallery-item p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+#explore {
+    background-color: #030303;
+}
+
+.explore-container {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.explore-container h2 {
+    color: #FFF;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.explore-container .section-devider {
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+    margin-bottom: 75px;
+}
+
+.explore-container p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38.5px;
+    /* 175% */
+    padding-bottom: 25px;
+}
+
+.explore-slider-container {
+    position: relative;
+    width: 720px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.explore-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.explore-img-after,
+.explore-img-before {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.explore-img-after {
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.explore-img-before {
+    left: 0;
+    width: 440px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.explore-img-after img,
+.explore-img-before img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.explore-slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 440px;
+    transform: translate(-50%, -50%);
+    width: 39px;
+    height: 100%;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.explore-text span {
+    color: #CAAA7D;
+}

@@ -903,3 +903,99 @@ h3 {
     width: 175px;
     height: 50px;
 }
+
+.parallax img {
+    width: 100%;
+    height: 400px;
+}
+
+
+#contacts {
+    background-color: #fff;
+}
+
+.contacts-container {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 198px;
+}
+
+.contact-info {
+    width: 285px;
+    max-width: 50%;
+}
+
+.map {
+    width: 960px;
+    max-width: 50%;
+    height: 620px;
+}
+
+.contact-info h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom: 50px;
+
+}
+
+.contact-info p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+
+.contact-info strong {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.map iframe {
+    filter: grayscale(1) brightness(1.1) contrast(1.2);
+    border-radius: 4px;
+}
+
+.contact-info a {
+    color: #000;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.contact-info a:hover {
+    color:#9D8665;
+}
+
+.contact-info a:visited {
+    color:#7E6C51;
+}
+
+.map iframe {
+    width: 960px;
+    height: 620px;
+}
